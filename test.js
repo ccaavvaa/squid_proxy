@@ -1,7 +1,7 @@
-import fetch from 'node-fetch';
-import HttpsProxyAgent from 'https-proxy-agent';
+const fetch = require('node-fetch');
+const HttpsProxyAgent = require('https-proxy-agent');
 
-const proxy = "http://127.0.0.1:8080";
+const proxy = "http://test:test@127.0.0.1:9090";
 
 (async () => {
     const proxyAgent = new HttpsProxyAgent(proxy);
